@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/DanielZarandona/GeoPet#readme",
   "dependencies": {
-    "express": "",
-    "mongo": ""
+    "express": "^4.17.1",
+    "mongo": "",
+    "socket.io": "^2.3.0"
   }
 }
