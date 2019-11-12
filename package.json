@@ -1,0 +1,23 @@
+{
+  "name": "geopet",
+  "version": "1.0.0",
+  "description": "proyecto georeferenciados",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielZarandona/GeoPet.git"
+  },
+  "author": "Daniel Ortiz Zarandona, Christian Ramírez Villalpando",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielZarandona/GeoPet/issues"
+  },
+  "homepage": "https://github.com/DanielZarandona/GeoPet#readme",
+  "dependencies": {
+    "express": "",
+    "mongo": ""
+  }
+}
