@@ -19,7 +19,7 @@
         height: 530px;
       }
     </style>
-    
+    <link rel="shortcut icon" href="image/91544.png">
   </head>
   <body>
     <div id="map"></div>
@@ -150,9 +150,11 @@
 
       function agregarMarker(ubicacion){
 
+        debugger;
         var marker  =  new google.maps.Marker({
             map: map,
-            position: ubicacion
+            position: ubicacion,
+            icon: '/image/91544.png'
         });
       }
     </script>
