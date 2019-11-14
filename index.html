@@ -19,7 +19,6 @@
         height: 530px;
       }
     </style>
-    <link rel="shortcut icon" href="image/91544.png">
   </head>
   <body>
     <div id="map"></div>
@@ -47,13 +46,17 @@
         }); 
     </script>
     <script>
+      
       var map;
       function initMap() {
+        
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat:21.150908, lng:-101.71110470000002},
-          zoom: 18,
+          zoom: 16,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         });
+
+        
 
         //Localización
         if (navigator.geolocation) {
@@ -64,6 +67,17 @@
                 position: pos
             });
 
+            var circle = new google.maps.Circle({
+              strokeColor: '#FF0000',
+              strokeOpacity: 0.8,
+              strokeWeight: 2,
+              fillColor: '#FF0000',
+              fillOpacity: 0.35,
+              map: map,
+              center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+              radius: 3000
+            });
+           
         });
      }
       }
@@ -157,6 +171,8 @@
             icon: '/image/91544.png'
         });
       }
+
+
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgCVlEj60Hbq798Nc-HTPo0mRCJnx_Ktg&callback=initMap"></script>
 </html>
