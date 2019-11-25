@@ -1,0 +1,18 @@
+<%- layout('layouts/main') %>
+
+<div class="login-form">
+    <form action="/signup" method="POST">
+        <h2 class="text-center">Registrar cuenta</h2>       
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Correo electrónico" required="required" name="email">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Contraseña" required="required" name="password">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+        </div>
+        <a href="/signin" class="pull-center">Regresar</a>  
+    </form>
+</div>
+
